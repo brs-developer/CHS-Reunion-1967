@@ -1,0 +1,410 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  color: #bf0404;
+  display: block;
+  background: #fff;
+  -webkit-text-size-adjust: none;
+  text-rendering: optimizeLegibility; 
+  -webkit-touch-callout: none;
+  -webkit-font-smoothing: antialiased !important;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #fff;
+}
+h1,
+h2,
+h3 {
+  position: relative;
+  color: #bf0404;
+  font-family: "Merienda One", cursive;
+}
+h2 sup {
+  vertical-align: top;
+}
+.container-fluid {
+  padding: 0;
+  position:relative;
+}
+#back-to-top {
+  display: none;
+  color: #fff;
+  background: url(../images/back-to-top5.png) no-repeat;
+  position: fixed;
+  right: -12px;
+  bottom: 50px;
+  z-index: 100;
+  cursor: pointer;
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+  background-size: 100%;
+  opacity: 0.9;
+}
+#back-to-top:hover {
+  cursor: pointer;
+}
+#border-top,
+#border-bottom {
+  background: url(../images/border-x.png) repeat-x;
+  width: 100%;
+  height: 24px;
+  position: relative;
+  z-index: 11;
+}
+#border-top {
+  position: absolute;
+  top: -2px;
+  z-index: 15;
+}
+#border-bottom {
+  top: 20px;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  outline: 0;
+}
+header {
+  width: 100%;
+  height: 30px;
+  background: url(../images/bg-leather/bg-red1.jpg) repeat;
+  box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 1);
+}
+nav {
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 27px;
+  display: inline-block;
+  margin: 0;
+  padding: 15px;
+  font-variant: small-caps;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  text-shadow: 0 0 7px #fff;
+  letter-spacing: 0.5px;
+}
+nav a:hover {
+  text-shadow: 0 0 10px #b40404;
+}
+#topper {
+  background: #000 url(../images/diploma1.jpg) top center no-repeat;
+}
+#content-wrap {
+  min-height: 560px;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 10;
+  position: relative;
+  font-size: 16px;
+}
+#content-wrap h1 {
+  margin: 0 auto;
+  font-size: 57px;
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-family: "Times New Roman", Times, serif;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+  line-height: 0.85em;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 0.2em 0 .1em;
+  border-bottom: 7px ridge #303030;
+  box-shadow: 0 1px 0.2em 0 rgba(0, 0, 0, 0.8);
+}
+#content-wrap p {
+  font-size: 1.1em;
+  margin: 4px auto;
+  line-height: 21px;
+  width: 93%;
+  font-family: "Quicksand", sans-serif;
+}
+img#chs-desktop {
+  max-width: 565px;
+}
+img#chs-mobile {
+  border-bottom: 7px ridge #303030;
+}
+#students-container {
+  width: 100%;
+  margin: 0 auto;
+  background: url(../images/bg-leather/bg-red1.jpg) repeat;
+  padding: 30px 0 20px;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 1);
+  /*border-top: 0.2em ridge #bf0404;
+  border-bottom: 0.1em ridge #bf0404;*/
+}
+#content-wrap #students-wrap {
+  background: url(../images/bg-leather/bg-red1.jpg) repeat;
+  border: 0.4em ridge #bf0404;
+  color: #fff;
+  max-width: 1154px;
+  min-width: 304px;
+  margin: 0 auto;
+  box-shadow: 0 0.5em 4em 0 rgba(0, 0, 0, 1);
+  padding: 10px 0 0;
+}
+#content-wrap .student {
+  width: 94px;
+  height: 156px;
+  display: inline-block;
+  text-decoration: none;
+  outline: 0;
+}
+#content-wrap .student img {
+  border: 6px double #fff;
+  box-sizing: content-box;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.4);
+  outline: 0;
+}
+#content-wrap .student:hover {
+  text-shadow: 0 0 7px #fff;
+  position: relative;
+  z-index: 999;
+}
+#content-wrap .student .student-name {
+  font-size: 10px;
+  line-height: 12px;
+  font-family: "Comfortaa", cursive;
+  padding: 4px 0 0;
+}
+#students-container p {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 14px !important;
+}
+#not-pictured {
+  max-width: 934px;
+  padding: 12px 0 22px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 14px 40px 0 rgba(0, 0, 0, 0.5);
+  border: 0.2em ridge #bf0404;
+  border-top: 0;
+}
+#students-container #not-pictured p#no-pics {
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px !important;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+img#high-school {
+  margin: 2em auto 1.5em;
+  border: 0.4em ridge #bf0404;
+  padding: 0;
+  max-width: 1087px;
+  box-shadow:0 0 1em 0 rgba(0, 0, 0, 1);
+}
+#high-school-wrap {
+  font-size:16px;
+}
+#high-school-wrap .row {
+  min-height: 305px;
+  flex-wrap: nowrap;
+  max-width: 1087px;
+  margin: 0 auto;
+  font-size: 13px;
+}
+#high-school-wrap #indian-right {
+  background: url(../images/indian-right3.png) no-repeat center;
+  max-width: 250px;
+  height: auto;
+  display: inline-block;
+  margin: 24px auto;
+  background-size: 100%;
+}
+#high-school-wrap #para {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.25em;
+  line-height: 1.3em;
+  max-width: 350px;
+  margin: 0.5em auto 2em;
+  position: relative;
+}
+#high-school-wrap h3 span#year {
+  font-size: 1.5em;
+  margin: 0;
+  display: inline-block;
+}
+#high-school-wrap ul li {
+  line-height: 1.15em;
+  margin: .75em auto;
+}
+#high-school-wrap h3 {
+  font-size: 1.3em;
+  color: #bf0404;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  position: relative;
+  top: -5px;
+  line-height: 1em;
+}
+#reunion-wrap {
+  background: rgba(0,0,0,.05);
+  border: 1px solid silver;
+  padding: 3px 0 6px;
+  border-left:0;
+  border-right:0;
+  margin-top: 14px;
+}
+#high-school-wrap h4 {    
+    font-style: italic;
+    margin: 10px auto 0;
+    text-shadow: 1px 1px 1px #fff;
+    max-width: 320px;
+}
+#reunion-wrap ul {
+   margin-bottom: 1.25em;
+}
+#reunion-wrap ul li {
+   text-shadow: 1px 1px 1px #fff;
+}
+
+#high-school-wrap #para span {
+  font-weight: bold;
+  display: block;
+  margin-top: 0.9em;
+}
+#high-school-wrap #indian-left {
+  background: url(../images/indian-left3.png) no-repeat center;
+  max-width: 250px;
+  height: auto;
+  display: inline-block;
+  margin: 24px auto;
+  background-size: 100%;
+}
+#committe-container {
+  background: url(../images/bg-committee1.jpg) top center repeat;
+  width: 100%;
+  padding: 0 0 0.9em;
+  border-top: 4px ridge gray;
+  border-bottom: 4px ridge gray;
+}
+#committee-wrap {
+  margin: 1em auto 0.5em;
+  min-height: 285px;
+  max-width: 53em;
+}
+img#committee {
+  max-width: 424px;
+  border: 0.5em ridge gray;
+  padding: 0;
+  margin: 0.2em auto 0;
+  box-shadow:0 0 1em 0 rgba(0, 0, 0, 1);
+}
+#committee-names {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+#committee-names ul {
+  padding: 0.6em 0 1.1em;
+  background: rgba(0, 0, 0, 0.7);
+  max-width: 26.4em;
+  margin: 0.5em auto 0;
+}
+#committee-names ul li {
+  list-style-type: none;
+  padding: 5px 0 0;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.1em;
+}
+#dedication {
+  clear: both;
+  margin: 1.5em 0 1em;
+}
+#dedication h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+}
+#dedication p {
+  max-width: 654px;
+  margin-bottom: 0.75em;
+}
+#dedication ul {
+  max-width: 350px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0.2em;
+  padding: 0 1.25em;
+}
+#dedication ul li {
+  list-style-type: none;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 900;
+  font-size: .9em;
+}
+#dedication ul li span {
+  width: 56px;
+  font-weight: 300;
+  display: inline-block;
+}
+footer {
+  width: 100%;
+  background: url(../images/bg-leather/bg-red1.jpg) repeat;
+  text-align: center;
+  margin: 12px auto 0;
+  clear: both;
+  padding: 0 0 75px;
+  z-index: 10;
+  clear: both;
+}
+footer span {
+  color: #bcb6b6;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px !important;
+  position: relative;
+  top: 12px;
+  display: inline-block;
+}
+footer span a {
+  color: #bcb6b6 !important;
+  font-size: 14px !important;
+  display: inline-block;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    img#chs-desktop { display:none; } 
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    img#chs-desktop { display:none; }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    img#chs-desktop { display:none; }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    img#chs-mobile { display:none; }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    img#chs-mobile { display:none; }
+}

@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <title>Carlisle High School - Class of 1967</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/magnific.popup.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Marck+Script|Merienda+One|Playball|Quicksand|Tangerine" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon.ico">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="scripts/jquery.magnific.popup.js"></script>
+    <script src="scripts/students.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="back-to-top"></div>
+        <div id="border-top"></div>
+
+        <header></header>
+
+        <div id="content-wrap">
+            <section id="topper">
+                <h1>CARLISLE HIGH SCHOOL</h1>
+                <img src="images/chs-50-year1.png" class="responsive" id="chs-desktop" alt="Class of 1967" />
+                <img src="images/topper-mobile.jpg" class="responsive" id="chs-mobile" alt="Class of 1967" />
+            </section>
+
+            <section id="students-container">
+                <div id="students-wrap"></div>
+                <script>
+       			var wrap = document.querySelector("#students-wrap");
+var names = students.map(function (student, i) {
+    return "<a href=\"images/student/" + (i + 1) + ".jpg\" class=\"student\" id=\"student" + (i + 1) + "\" title=\"" + student + "\">\n                                <img src=\"images/student/" + (i + 1) + ".jpg\" width=\"75\" height=\"106\" class=\"rounded-circle\" />\n                                <div class=\"student-name\">\n                                    " + student.substring(0, student.lastIndexOf(" ")) + "<br>\n                                    " + student.substring(student.lastIndexOf(" ") + 1) + "\n                                </div>\n                            </a>";
+}).join("");
+wrap.innerHTML = names;
+
+                  /* var wrap = document.querySelector("#students-wrap");
+                    var names = students.map((student, i) => {
+                        return `<a href="images/student/${i + 1}.jpg" class="student" id="student${i + 1}" title="${student}">
+                                <img src="images/student/${i + 1}.jpg" width="75" height="106" class="rounded-circle" />
+                                <div class="student-name">
+                                    ${student.substring(0, student.lastIndexOf(" "))}<br>
+                                    ${student.substring(student.lastIndexOf(" ") + 1)}
+                                </div>
+                            </a>`;
+                    }).join("");
+                    wrap.innerHTML = names; */
+                </script>
+
+
+                <div id="not-pictured">
+                    <p>Students not pictured above:</p>
+
+                    <p id="no-pics">
+                        Sandy Bates &nbsp;&nbsp;&nbsp;&nbsp; Hank Cunningham
+                        <br> Wiley Farler &nbsp;&nbsp;&nbsp;&nbsp; Janice Inman
+                        <br> Luther Johnson &nbsp;&nbsp;&nbsp;&nbsp; Faye Kirkpatrick
+                        <br> Timothy Shelton
+                        <br>
+                    </p>
+                </div>
+            </section>
+
+            <div id="high-school-wrap">
+                <img src="images/high-school-1.jpg" class="responsive" id="high-school" alt="Carlisle High School" />
+                <h3><span id="year">1967</span><br>CARLISLE INDIANS</h3>
+                    <div id="reunion-wrap">
+                        <h4>50 YEAR REUNION</h4>
+                        <ul>
+                        	<li><strong>6/9/17 @6:00PM</strong><br>
+                        	- Dinner and Dance -<br>
+                        	Chautauqua Community Center</li>
+                        	<li><strong>6/10/17 @6:00PM</strong><br>
+                        	- Carlisle Alumni Dinner -<br>
+                        	Carlisle High School</li>
+                        	<li><strong>6/11/17 @1:00PM</strong><br>
+                        	- Picnic at the Park -<br>
+                        	Sycamore Trails Park</li>
+                        </ul>
+                    </div>
+                <div class="row">
+                    <div id="indian-right" class="col-4"></div>
+                    <div id="para" class="col-4">                      
+                        <span>Class Motto:</span> By Effort Comes Wisdom
+                        <br>
+                        <span>Class Colors:</span> Ice Blue &amp; Silver
+                        <br>
+                        <span>Class Flower:</span> White Carnation
+                    </div>
+                    <div id="indian-left" class="col-4"></div>
+                </div>
+            </div>
+
+            <section id="committe-container">
+                <div id="committee-wrap">
+                    <img src="images/committee2.jpg" class="responsive" id="committee" alt="Class Of 1967 School Reunion Committee" />
+                    <div id="committee-names">
+                        <ul>
+                            <li>Linda (Smith) Colvin - Chairperson</li>
+                            <li>Carrie (Adams) Million</li>
+                            <li>Donna (Cunningham) Kennard</li>
+                            <li>Karla (Smith) Allison</li>
+                            <li>Meredith Goldie</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+            <div id="dedication">
+                <h2>DEDICATION</h2>
+                <p>
+                    In dedication to the classmates that we've lost over the years, below are the names along with the year passed in chronological
+                    order:
+                </p>
+
+                <ul>
+                    <li>
+                        <span>1964</span> Lynn Roof</li>
+                    <li>
+                        <span>1973</span> Danny Lee Thorn</li>
+                    <li>
+                        <span>1980</span> John Ray Smith</li>
+                    <li>
+                        <span>1981</span> Earl Bolen</li>
+                    <li>
+                        <span>1984</span> Malcolm Hensley</li>
+                    <li>
+                        <span>1989</span> Harless Ray Fitzpatrick</li>
+                    <li>
+                        <span>1993</span> Jerry Lee Harrell</li>
+                    <li>
+                        <span>1997</span> Ronald Heitfield</li>
+                    <li>
+                        <span>1998</span> Ronald Dale Compton</li>
+                    <li>
+                        <span>2001</span> Ray Adams</li>
+                    <li>
+                        <span>2001</span> Charles E Lynch</li>
+                    <li>
+                        <span>2004</span> Mick Harmon Fancher</li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <span>2005</span> Richard Anthony Wittenhagen</li>
+                    <li>
+                        <span>2008</span> Linda Darlene (Lucas) Pell</li>
+                    <li>
+                        <span>2010</span> Ina Fay (Deaton) Benton</li>
+                    <li>
+                        <span>2010</span> Shirley Ann (Sullivan) Croley</li>
+                    <li>
+                        <span>2010</span> Robert James Hess York</li>
+                    <li>
+                        <span>2012</span> Patricia Eileen (DeGroat) Rich</li>
+                    <li>
+                        <span>2013</span> Eli Monroe Crowe</li>
+                    <li>
+                        <span>2013</span> Joyce (Turner) Estep</li>
+                    <li>
+                        <span>2013</span> Linda Sue (Whisman) Chapel</li>
+                    <li>
+                        <span>2015</span> Lynda Rae (Gephart) Owens</li>
+                    <li>
+                        <span>2015</span> George W Haworth Jr.</li>
+                    <li>
+                        <span>2015</span> Patricia Ann (Pearson) Hazlett</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="border-bottom"></div>
+    <footer>
+        <span>&copy; 2018 ~ Reunion Bay</span>
+    </footer>
+
+    <script>
+        $(function () {
+            $('.student').magnificPopup({
+                type: 'image',
+                closeOnContentClick: true,
+                mainClass: 'student img',
+                image: {
+                    verticalFit: true
+                }
+            });
+        });			
+    </script>
+
+    <script>
+        $(function () {
+            $('#back-to-top').on('click', function () {
+                $('html, body').animate({
+                    scrollTop: $('#content-wrap').offset().top -
+                        ($(window).height() / 2)
+                }, 400);
+            }); var scrollThresh = 50; $(window).on("scroll", function () {
+                var top = window.pageYOffset
+                    || document.documentElement.scrollTop; if (top >= 1000) { $("#back-to-top").fadeIn(); } else {
+                        $("#back-to-top").fadeOut();
+                    }
+            })
+        });
+    </script>
+</body>
+
+</html>
